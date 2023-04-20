@@ -4,6 +4,9 @@ import Credits from './components/Credits'
 import HomeOptions from './components/HomeOptions'
 import TypeWriterText from './components/TypeWriterTextEffect'
 
+import answers from './answers/bootcamp.json'
+//import answers from './answers/fl1.json'
+
 export default function App() {
 
   const [search, setSearch] = useState('')
@@ -25,18 +28,17 @@ export default function App() {
           :
           <>
             <div className='flex items-center justify-center w-full mt-20'>
-              <TypeWriterText text="As an AI language model, I don't have the capability to build a website myself, but I can certainly provide you with some guidance on how to get started with building a website." onTextCompleted={setShowMore} />
+              <TypeWriterText text={answers.answer1} onTextCompleted={setShowMore} />
             </div>
             {showMore &&
               <div className='flex items-center justify-center w-full mt-20'>
-                <TypeWriterText text="I would recommend you call FL1 Digital, they're amazing and will build you a far better website than any articfial intellegance 😉" onTextCompleted={setShowMore} />
+                <TypeWriterText text={answers.answer2} onTextCompleted={setShowMore} />
               </div>
             }
           </>}
         <div className='flex items-center justify-center w-full mt-20'>
           <SearchInput onSearch={onSearch} />
         </div>
-
 
       </section>
       <footer className="flex items-center justify-center w-1/2 p-10 text-gray-800 bg-gray-800 dark:text-gray-100">
