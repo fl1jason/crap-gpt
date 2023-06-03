@@ -4,8 +4,10 @@ import Credits from './components/Credits'
 import HomeOptions from './components/HomeOptions'
 import TypeWriterText from './components/TypeWriterTextEffect'
 
-import answers from './answers/bootcamp.json'
-//import answers from './answers/fl1.json'
+// import answers from './answers/bootcamp.json'
+import answers from './answers/jamie.json'
+// import answers from './answers/lovely.json'
+// import answers from './answers/pizza.json'
 
 export default function App() {
 
